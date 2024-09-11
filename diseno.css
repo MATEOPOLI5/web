@@ -22,3 +22,36 @@ p {
   line-height: 1.6;
   font-size: 1em;
 }
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+  margin: 40px 0;
+  font-size: 18px;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000000;
+}
+
+th,
+td {
+  padding: 12px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+td {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) td {
+  background-color: #e0e0e0;
+}
