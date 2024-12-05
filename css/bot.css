@@ -1,0 +1,63 @@
+/* Estilo para el contenedor general */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #6affe654; /* Fondo rosa claro */
+    border-radius: 10px;
+    border: 2px solid #411229; /* Borde rosa fuerte */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+
+/* Estilo para el título */
+.reporte-titulo {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+   
+    color: rgb(0, 0, 0);
+    padding: 20px;
+   
+    text-transform: uppercase;
+}
+
+/* Contenedor de los botones */
+a {
+    display: flex;
+    gap: 20px; /* Espacio entre botones */
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permite que los botones se ajusten en varias líneas si es necesario */
+}
+
+/* Estilo de los botones */
+.comic-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #330c66;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.comic-button:hover {
+    background-color: #fff;
+    color: #05000c;
+    border: 2px solid #03011b;
+}
+
+.comic-button:active {
+    background-color: #fcf414;
+    box-shadow: none;
+    transform: translateY(4px);
+}

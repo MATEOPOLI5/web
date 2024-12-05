@@ -1,0 +1,86 @@
+body{
+    font-family: Arial, sans-serif;
+ /*   background: linear-gradient(135deg,#FF4CC0,#d145ff98, #002da8, #b61b75, #2b53c0,#CF45FF,#FF4CC0);
+ 
+ */ 
+ 
+ background-image: url(../img/fond.jpg);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat; 
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+
+
+.login-container {
+  padding: 60px 20px;
+  border-radius: 8px;
+  background-color: #2214a071 ;
+  background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo en el contenedor */
+    background-repeat: no-repeat; 
+  width: 300px;
+  text-align: center;
+  border: 2px solid rgb(56, 53, 53);
+  
+}
+/*LARGO DEL CONTENEDOR  */
+.login-container h2 {
+  /*margin-bottom: 30px;
+  color: #ffffff;*/
+  margin-bottom: 30px;
+      color: #000000;
+   
+      display: inline-block; /* Ajusta el fondo al tamaño del texto */
+      padding: 5px; /* Ajusta el espacio alrededor del texto */
+      border-radius: 4px; /* Bordes redondeados */
+}
+/*LARGO DE LOS CAMPOS DE TEXTOS*/
+.login-container input {
+width: 90%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.login-container button {
+width: 48%;
+padding: 10px;
+border: none;
+border-color: aliceblue;
+color: white;
+border-radius: 4px;
+cursor: pointer;
+margin: 5px 1%;
+}
+
+.login-container .btn-login {
+background-color: #2e2376;
+}
+
+.login-container .btn-login:hover {
+background-color: #b186a3b9;
+}
+
+.login-container .btn-cancel {
+background-color: #d4192c;
+}
+
+.login-container .btn-cancel:hover {
+background-color: #813e3ed5;
+}
+
+.error-message 
+{
+  background-color: #000000d6; 
+color: #b10e0e;
+font-size: 0.9em;
+margin-top: 10px;
+}
+

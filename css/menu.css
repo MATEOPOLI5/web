@@ -1,0 +1,144 @@
+
+.titulo1 {
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    color: #18191a; /* Color de texto */
+    font-weight: bold; /* Grosor de la fuente */
+    text-shadow: 0 0 0.1em rgb(223, 134, 245), 0 0 0.1em rgb(85, 160, 135),
+    0 0 0.1em #87F;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px
+  }
+   
+  /*MENÚ*/
+  
+  .navbar {
+      background: #d37af0;
+      border-bottom: 1px solid rgba(179, 111, 218, 0.1);
+    }
+    
+    .navbar-brand {
+      font-weight: bold;
+    }
+    
+    .nav-link {    
+      font-weight: bold;
+    }
+  /*TERMINA MENÚ*/
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #b6cbf0;
+    font-family: Arial, sans-serif;
+}
+
+.color {
+  background-color: #b6cbf0;
+  background-size: cover;
+     background-position: center;
+    flex: 1; /* Asegura que este contenedor ocupe todo el espacio restante */
+}
+
+h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para los elementos del formulario */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Estilos responsivos para pantallas pequeñas */
+  @media (max-width: 600px) {
+    form {
+      width: 100%;
+      margin: 20px auto;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  
+  /*TABLA*/
+
+
+
+h3 {
+    color: #343a40;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.table thead {
+    background-color: #007bff;
+    color: rgb(36, 3, 30);
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+}
+
+.table tr:hover {
+    background-color: #776c6c96;
+}
+
+.table img {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.table img:hover {
+    transform: scale(1.1);
+}
+
+.table-responsive {
+    margin-top: 20px;
+}

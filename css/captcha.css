@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+ /*   background: linear-gradient(135deg,#FF4CC0,#d145ff98, #002da8, #b61b75, #2b53c0,#CF45FF,#FF4CC0);
+ 
+ */ 
+ 
+/* background-image: url(../img/images.jpg);*/
+background-color: #DAE3F3;
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat; 
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+  }
+
+  .captcha-container {
+    background-color: #b6cbf0;
+    padding: 30px;
+    border-radius: 20px;
+   /* box-shadow: 0 10px 30px rgb(19, 78, 206);/*/
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+   /* animation: fadeIn 1s ease-in-out;*/
+
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+  h2 {
+    
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .captcha-container img {
+    display: block;
+max-width: 100%;
+height: auto;
+margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
+    
+  }
+
+  .captcha-container input {
+    width: 50%;
+    padding: 15px;
+    
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: border 0.3s ease;
+  }
+
+  .captcha-container input:focus {
+    outline: none;
+    border-color: #28a745;
+  }
+
+  .captcha-container button {
+    width: 50%;
+    padding: 15px;
+    background-color: #d393ce;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .captcha-container button:hover {
+    background-color: #d673cd;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+  
+  /* Pequeñas animaciones al mostrar los mensajes */
+  .error-message {
+    opacity: 0;
+    animation: showMessage 0.5s forwards;
+  }
+
+  @keyframes showMessage {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

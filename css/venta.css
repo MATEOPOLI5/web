@@ -1,0 +1,34 @@
+.form-group label {
+    font-weight: bold;
+    color: #009cda;
+}
+.table-header {
+    background-color: #4F81BD;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.btn-custom {
+    background-color: #4F81BD;
+    color: white;
+}
+
+.form-container {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+h1 {
+    color: #000000; /* Cambia el color aquí */
+    font-weight: bold; /* Opcional */
+}
+
+.form-container {
+    margin-top: 20px; /* Espaciado superior para el formulario */
+}
+
+/* Otros estilos que puedas tener */

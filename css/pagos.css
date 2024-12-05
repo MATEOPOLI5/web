@@ -1,0 +1,85 @@
+.pago-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #360505;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #e70909;
+}
+
+.pago-efectivo, .pago-tarjeta {
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+}
+
+label {
+    font-weight: bold;
+    color: #4569d6;
+}
+
+.form-control {
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.row.mb-3 {
+    margin-bottom: 10px;
+}
+
+.tarjeta-iconos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.tarjeta-iconos img[src="visa-icon.png"] {
+    width: 65px;
+    height: 50px;
+}
+
+
+.tarjeta-iconos img[src="mastercard-icon.png"] {
+    width: 85px;
+    height: 70px;
+}
+
+.tarjeta-iconos img[src="amex-icon.png"] {
+    width: 85px;
+    height: 70px;
+}
+
+    /* Estilo para destacar el mensaje */
+    .senial-ok {
+        color: green;
+        font-weight: bold; /* Opcional */
+    }
+    
+    .senial-mal {
+        color: rgb(168, 11, 11);
+        font-weight: bold; /* Opcional */
+    }
+
+    /* Animación de parpadeo para llamar la atención */
+    @keyframes parpadeo {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }
+
+    .mensaje-senal.senial-mal {
+        animation: parpadeo 1s infinite;
+    }
+
+ 
+    h3 {
+        color: #ffffff; /* Cambia el color aquí */
+        font-weight: bold; /* Opcional */
+    }
+
+    
