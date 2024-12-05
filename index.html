@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/pagos.css">
+    <title>Pago con Tarjeta</title>
+    <style>
+        /* Estilo para destacar el mensaje */
+        .mensaje-senal {
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.2em;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .mensaje-senal.senial-ok {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .mensaje-senal.senial-mal {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* Animación de parpadeo para llamar la atención */
+        @keyframes parpadeo {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .mensaje-senal.senial-mal {
+            animation: parpadeo 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="subTarjeta">
+        <h2>Pago con Tarjeta</h2>
+        
+        <!-- Estado de la señal -->
+        <p id="estadoSenal" class="mensaje-senal"></p>
+        
+        <form action="pago_tarjeta.php" method="post">
+            <div class="tarjeta-iconos mb-3">
+                <img src="visa-icon.png" alt="Visa">
+                <img src="mastercard-icon.png" alt="Mastercard">
+                <img src="amex-icon.png" alt="American Express">
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label>Nombre en la tarjeta:</label>
+                    <input type="text" name="nombre_tarjeta" class="form-control" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label>Número de tarjeta:</label>
+                    <input type="text" name="numero_tarjeta" class="form-control" id="numeroTarjeta" required oninput="reconocerBanco()">
+                    <span id="bancoNombre" style="font-weight: bold; color: #4569d6;"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label>Código de seguridad:</label>
+                    <input type="text" name="codigo_seguridad" class="form-control" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btnPagar">Realizar Pago</button>
+        </form>
+    </div>
+
+    <script>
+    window.onload = function() {
+        verificarSenal();
+    };
+
+    function verificarSenal() {
+        const estadoSenal = document.getElementById('estadoSenal');
+        const btnPagar = document.getElementById('btnPagar');
+        
+        const haySenal = Math.random() < 0.5;  // 50% de probabilidad de que haya señal
+        
+        if (haySenal) {
+            estadoSenal.textContent = 'Con señal: Puedes realizar el pago';
+            estadoSenal.classList.remove('senial-mal');
+            estadoSenal.classList.add('senial-ok');
+            btnPagar.disabled = false;
+        } else {
+            estadoSenal.textContent = 'Sin señal: No puedes realizar el pago en este momento';
+            estadoSenal.classList.remove('senial-ok');
+            estadoSenal.classList.add('senial-mal');
+            btnPagar.disabled = true;
+        }
+    }
+
+    function reconocerBanco() {
+        const numeroTarjeta = document.getElementById('numeroTarjeta').value;
+        const bancoNombre = document.getElementById('bancoNombre');
+        
+        const primerosCuatro = numeroTarjeta.substring(0, 4);
+        
+        switch (primerosCuatro) {
+            case '1000':
+                bancoNombre.textContent = 'Banco: Banorte';
+                break;
+            case '1100':
+                bancoNombre.textContent = 'Banco: BBVA';
+                break;
+            case '1110':
+                bancoNombre.textContent = 'Banco: Banamex';
+                break;
+            case '1111':
+                bancoNombre.textContent = 'Banco: Banco Azteca';
+                break;
+            case '1112':
+                bancoNombre.textContent = 'Banco: Santander';
+                break;
+            case '1122':
+                bancoNombre.textContent = 'Banco: American Express';
+                break;
+            default:
+                bancoNombre.textContent = 'Banco: Otro';
+                break;
+        }
+    }
+    </script>
+</body>
+</html>
