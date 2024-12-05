@@ -1,0 +1,137 @@
+[
+    {
+        "empleado": "Brenda Azereth Guerrero Portilla",
+        "fecha": "2024-11-11",
+        "cliente": "Maria Bautista Hernandez",
+        "productos": [
+            {
+                "nombre": "Galletas Oreo 150g",
+                "codigo": "S1T2U3",
+                "cantidad": "1",
+                "precio": "$20.00",
+                "total": "$20.00"
+            }
+        ],
+        "total": "$20.00"
+    },
+    {
+        "empleado": "Brenda Azereth Guerrero Portilla",
+        "fecha": "2024-11-11",
+        "cliente": "Maria Bautista Hernandez",
+        "productos": [
+            {
+                "nombre": "Galletas Oreo 150g",
+                "codigo": "S1T2U3",
+                "cantidad": "1",
+                "precio": "$20.00",
+                "total": "$20.00"
+            }
+        ],
+        "total": "$20.00"
+    },
+    {
+        "empleado": "Brenda Azereth Guerrero Portilla",
+        "fecha": "2024-11-11",
+        "cliente": "Maria Bautista Hernandez",
+        "productos": [
+            {
+                "nombre": "Galletas Oreo 150g",
+                "codigo": "S1T2U3",
+                "cantidad": "1",
+                "precio": "$20.00",
+                "total": "$20.00"
+            }
+        ],
+        "total": "$20.00"
+    },
+    {
+        "empleado": "Brenda Azereth Guerrero Portilla",
+        "fecha": "2024-11-11",
+        "cliente": "Maria Bautista Hernandez",
+        "productos": [
+            {
+                "nombre": "Pepsi 355ml",
+                "codigo": "Y7Z8A1",
+                "cantidad": "2",
+                "precio": "$12.00",
+                "total": "$24.00"
+            }
+        ],
+        "total": "$24.00"
+    },
+    {
+        "empleado": "Brenda Azereth Guerrero Portilla",
+        "fecha": "2024-11-11",
+        "cliente": "Salome",
+        "productos": [
+            {
+                "nombre": "Jugo de Manzana 1L",
+                "codigo": "J1K2L3",
+                "cantidad": "2",
+                "precio": "$30.00",
+                "total": "$60.00"
+            }
+        ],
+        "total": "$60.00"
+    },
+    {
+        "empleado": "Brenda Azereth Guerrero Portilla",
+        "fecha": "",
+        "cliente": "",
+        "productos": [
+            {
+                "nombre": "Galletas Mar\u00edas 200g",
+                "codigo": "V4W5X6",
+                "cantidad": "1",
+                "precio": "$17.00",
+                "total": "$17.00"
+            }
+        ],
+        "total": "$17.00"
+    },
+    {
+        "empleado": "Brenda Azereth Guerrero Portilla",
+        "fecha": "",
+        "cliente": "",
+        "productos": [
+            {
+                "nombre": "Galletas Mar\u00edas 200g",
+                "codigo": "V4W5X6",
+                "cantidad": "2",
+                "precio": "$17.00",
+                "total": "$34.00"
+            }
+        ],
+        "total": "$34.00"
+    },
+    {
+        "empleado": "Brenda Azereth Guerrero Portilla",
+        "fecha": "",
+        "cliente": "",
+        "productos": [
+            {
+                "nombre": "Pepsi 355ml",
+                "codigo": "Y7Z8A1",
+                "cantidad": "2",
+                "precio": "$12.00",
+                "total": "$24.00"
+            }
+        ],
+        "total": "$24.00"
+    },
+    {
+        "empleado": "Mateo Policarpo Bautista",
+        "fecha": "",
+        "cliente": "Juan",
+        "productos": [
+            {
+                "nombre": "Queso",
+                "codigo": "242323224",
+                "cantidad": "2",
+                "precio": "$35.00",
+                "total": "$70.00"
+            }
+        ],
+        "total": "$70.00"
+    }
+]

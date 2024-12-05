@@ -1,0 +1,81 @@
+
+    /* Estilo general para tablas */
+    table {
+        width: 90%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #007BFF;
+        color: #ffffff;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+    td {
+        background-color: #f8f9fa;
+        font-size: 16px;
+        color: #333;
+    }
+
+    /* Efecto hover en las filas */
+    tr:hover td {
+        background-color: #e9ecef;
+    }
+
+    /* Alternar colores en las filas */
+    tr:nth-child(even) td {
+        background-color: #f2f2f2;
+    }
+
+    /* Estilo para botones de acción en la tabla */
+    button {
+        padding: 8px 12px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .opciones button {
+      background-color: #99D9EA;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  .opciones button:hover {
+      background-color: #7bb6d9;
+  }
+  
+  td button {
+      margin: 0 5px;
+      background-color: #99D9EA;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+  }
+  
+  td button:hover {
+      background-color: #7bb6d9;
+  }
+  
